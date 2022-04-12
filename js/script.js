@@ -108,6 +108,7 @@ function gameFunctions() {
     document.getElementById("overlay").style.opacity = 0;
     document.getElementById("allAnswers").style.display = "none";
     document.getElementById("correctMessage").style.display = "none";
+    document.getElementById("outOfTimeMessage").style.display = "none";
     document.getElementById("titleInstructionTwo").style.display = "none";
     document.getElementById("gameInfo").style.display = "none";
 
