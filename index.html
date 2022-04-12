@@ -4,64 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>IoT Fun - Guess the notes!</title>
+
+    <!-- Website Title -->
+    <title>Micro:bit Fun - Guess the notes!</title>
 </head>
 <body>
+    <!-- Header -->
     <header id="theHeader">
-        <img src="./images/logo.png" alt="Logo for Guess the Notes game">
-        
+        <img src="./images/logo.png" alt="Logo for Guess the Notes game">   
     </header>
 
+    <!-- Guess the Notes Game Content -->
     <section id="gameSection">
+        <!-- Title instructions section -->
+        <h2 id="titleInstructionOne">Listen to your Micro:bit! Remember this tune!</h2>
+        <h2 id="titleInstructionTwo">Listen for your tune within these random tunes...</h2>
 
-        <h2 id="tune">Listen to your Micro:bit! Remember this tune!</h2>
-        <h2 id="gameTunes">Listen for your tune within these random tunes...</h2>
-        <div id="guessTune">
+        <!-- Score and timer section -->
+        <div id="gameInfo">
             <h2>Choose your tune!</h2>
-            <!-- <h3>Time left: <span id="timeLeft">0</span></h3> -->
+            <h3>Time left: <span id="timeLeft">0</span></h3>
             <h3>Tunes guessed: <span id="tunesGuessed">0</span></h3>
         </div>
 
+        <!-- Results overlay section -->
         <div id="overlay">
             <h2 id="correctMessage">CORRECT! NEXT TUNE INCOMING!</h2>
             <h2 id="incorrectMessage">INCORRECT...PLEASE TRY AGAIN.</h2>
+            <h2 id="outOfTimeMessage">TIME HAS RAN OUT! PRESS A+B TO RETRY...</h2>
         </div>
         
-
+        <!-- Game board section -->
         <main id="allAnswers">
             <div id="answer1" class="answers"><img src="./images/tune1-card.png" alt="Tune card 1"></div>
             <div id="answer2" class="answers"><img src="./images/tune2-card.png" alt="Tune card 2"></div>
             <div id="answer3" class="answers"><img src="./images/tune3-card.png" alt="Tune card 3"></div>
             <div id="answer4" class="answers"><img src="./images/tune4-card.png" alt="Tune card 4"></div>
+            <!-- Player Arrow -->
             <img id="player" src="./images/player_pointer.png" alt="Pointer to show which note player wants to move towards">
         </main>
         
+        <!-- Game Instructions Section -->
         <section id="gameInstructions">
             <h1>Game Instructions</h1>
             <ol>
                 <li>Connect your Micro:bit to your computer.</li>
-                <li>Download/install the Guess the Notes hex file onto your Micro:bit, which can be obtained from the <a href="#">project on Microsoft Makecode</a></li>
+                <li>Open our <a href="https://makecode.microbit.org/_gLb2cC5WoEVo" target="_blank">project on Microsoft Makecode</a> and hit the "Edit" button in the top right. Then, hit the "Download" button on the bottom left side of the editor to download the .hex file.</li>
+                <li>Add the .hex file to your Micro:bit drive and calibrate your Micro:bit.</li>
                 <li>Connect your Micro:bit to your Google Chrome Browser, then hit play.</li>
                 <li>Pay attention to the tune that plays 3 times at the start, that's your note to remember!</li>
                 <li>Four random notes will be played, one of which is your tune that you had to remember.</li>
                 <li>Rotate your Micro:bit to point towards your answer, then hit the A+B button to confirm your choice and move towards it to select it.</li>
-                <li>Keep going until you obtain a high score!</li>
+                <li>Keep going until you obtain a high score, and keep an eye on the timer!</li>
             </ol> 
         </section>
         
-        <button id="start">
+        <!-- Buttons to connect the Micro:bit and start the game -->
+        <button id="connectMicro">
             <img src="./images/connect_main_btn.png" alt="Connect Microbit Button">
         </button>
-        <button id="write">
+        <button id="playGame">
             <img src="./images/play_btn.png" alt="Play game button">
         </button>
-
-
     </section>
     
-
-    <script language="javascript" type="text/javascript" src="./js/vendor/microBit.js"></script>
+    <!-- JS Scripts -->
     <script src="./js/script.js"></script>
 </body>
 </html>

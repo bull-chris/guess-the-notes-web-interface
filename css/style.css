@@ -1,3 +1,5 @@
+/* general styling settings */
+
 header {
     background-color: #497d79;
     margin: 0;
@@ -22,62 +24,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#gameSection {
-    position: relative;
-    width: 50%;
-    margin: 1rem 0rem;
-    margin-left: 10%;
-    float: left;
-}
-
-#gameInstructions h1 {
-    text-align: center;
-    font-size: 30px;
-    color: #497d79;
-    text-transform: uppercase;
-}
-
 h2 {
     color: #497d79;
 }
 
 a {
     color: #497d79;
-}
-
-#tune, #gameTunes, #guessTune {
-    display: none;
-    text-align: center;
-}
-
-#guessTune {
-    grid-template-columns: 1fr 1fr;
-}
-
-#guessTune h2 {
-    grid-column: 1 / span 2;
-}
-
-#guessTune h3 {
-    grid-column: 1 / span 2;
-    color: #497d79;
-}
-
-#allAnswers {
-    position: relative;
-    display: none;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#player {
-    position: absolute;
-    max-width: 30%;
-    width: 5%;
-    top: 46%;
-    left: 48%;
-    transition: all 1s;
 }
 
 button {
@@ -91,10 +43,67 @@ button:hover {
     cursor: pointer;
 }
 
-#write {
+/* gameSection styling */
+#gameSection {
+    position: relative;
+    width: 50%;
+    margin: 1rem 0rem;
+    margin-left: 10%;
+    float: left;
+}
+
+/* gameInstructions h1 styling */
+#gameInstructions h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #497d79;
+    text-transform: uppercase;
+}
+
+/* title instructions and game info styling */
+#titleInstructionOne, #titleInstructionTwo, #gameInfo {
+    display: none;
+    text-align: center;
+}
+
+/* gameInfo specific styling */
+#gameInfo {
+    grid-template-columns: 1fr 1fr;
+}
+
+#gameInfo h2 {
+    grid-column: 1 / span 2;
+}
+
+#gameInfo h3 {
+    color: #497d79;
+}
+
+/* allAnswers styling */
+#allAnswers {
+    position: relative;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* player styling */
+#player {
+    position: absolute;
+    max-width: 30%;
+    width: 5%;
+    top: 46%;
+    left: 48%;
+    transition: all 1s;
+}
+
+/* playGame styling */
+#playGame {
     display: none;
 }
 
+/* answers styling */
 .answers {
     max-height: 175px;
     max-width: 250px;
@@ -112,6 +121,7 @@ button:hover {
     
 }
 
+/* overlay styling */
 #overlay {
     position: absolute;
     display: none;
@@ -123,7 +133,8 @@ button:hover {
     transition: all 1s;
 }
 
-#correctMessage, #incorrectMessage {
+/* result messages styling */
+#correctMessage, #incorrectMessage, #outOfTimeMessage {
     background-color: #497d79;
     color: #fff;
     padding: 3rem;
@@ -135,6 +146,7 @@ button:hover {
     z-index: 1;
 }
 
+/* selected answer styling */
 .selected {
     filter: grayscale(0%) !important;
     transform: scale(1.1) !important;    
